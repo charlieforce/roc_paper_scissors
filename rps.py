@@ -14,7 +14,7 @@ while game_is_active:
     #Get player to correctly choose option
     while player_choice not in options:
       print(prompt_error)
-      player_choice = input('Did you throw rock, paper, or scissors? ')
+      player_choice = input('\nDid you throw rock, paper, or scissors? ')
 
     # What did the players select?
     print('The player\'s choice is', player_choice)
@@ -22,7 +22,7 @@ while game_is_active:
 
     # Comparisons
     if player_choice == computer_choice:
-        print('\n~~Tic Game!~~\n')
+        print('\n~~Tie Game!~~\n')
 
     elif player_choice == 'rock':
         if computer_choice == 'paper':
